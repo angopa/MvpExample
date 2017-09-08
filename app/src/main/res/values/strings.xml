@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MvpExample</string>
+    <string name="label_login">LOG IN</string>
+    <string name="hint_first_name">First Name</string>
+    <string name="hint_second_name">Second Name</string>
+</resources>
