@@ -51,4 +51,18 @@ public class LoginActivityPresenter implements LoginActivityMVP.Presenter {
             view.setLastName(user.getLastName());
         }
     }
+
+    @Override
+    public void saveUser() {
+        if (view == null) {
+            return;
+        }
+
+        if (view.getFirstName().trim().equals("") || view.getLastName().trim().equals("")) {
+            view.showInputError();
+        } else {
+            model.createUser(view.getFirstName(), view.getLastName());
+            view.showUserSavedMessage();
+        }
+    }
 }

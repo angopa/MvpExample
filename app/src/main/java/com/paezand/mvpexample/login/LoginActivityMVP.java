@@ -17,6 +17,8 @@ public interface LoginActivityMVP {
     interface Presenter {
         void setView(LoginActivityMVP.View view);
 
+        void saveUser();
+
         void loginButtonClicked();
 
         void getCurrentUser();
