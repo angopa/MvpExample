@@ -1,7 +1,8 @@
-package com.paezand.mvpexample.login;
+package com.paezand.mvpexample.ui.login;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;

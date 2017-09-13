@@ -1,4 +1,4 @@
-package com.paezand.mvpexample.login;
+package com.paezand.mvpexample.ui.login;
 
 import dagger.Module;
 import dagger.Provides;

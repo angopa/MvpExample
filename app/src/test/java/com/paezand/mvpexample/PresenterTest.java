@@ -1,8 +1,8 @@
 package com.paezand.mvpexample;
 
-import com.paezand.mvpexample.login.LoginActivityMVP;
-import com.paezand.mvpexample.login.LoginActivityPresenter;
-import com.paezand.mvpexample.login.User;
+import com.paezand.mvpexample.ui.login.LoginActivityMVP;
+import com.paezand.mvpexample.ui.login.LoginActivityPresenter;
+import com.paezand.mvpexample.ui.login.User;
 
 import org.junit.Before;
 import org.junit.Test;

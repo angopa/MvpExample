@@ -1,4 +1,4 @@
-package com.paezand.mvpexample.login;
+package com.paezand.mvpexample.ui.login;
 
 /**
  * Created by paezand on 9/1/17.
