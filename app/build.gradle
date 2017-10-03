@@ -18,6 +18,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+
 }
 
 dependencies {
@@ -25,20 +30,6 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-
-
-
-
-
-    compile "com.squareup.retrofit2:retrofit:$retrofitVersion"
-
-    //JSON Parsing
-    compile "com.squareup.retrofit2:converter-gson:$retrofitVersion"
-
-    //http logging
-    compile "com.squareup.okhttp3:logging-interceptor:$okHttp3"
-
-
     compile 'com.android.support:appcompat-v7:26.+'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.google.dagger:dagger:2.10'
@@ -49,4 +40,21 @@ dependencies {
     testCompile 'org.mockito:mockito-core:2.+'
     annotationProcessor 'com.google.dagger:dagger-compiler:2.10'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    compile "io.reactivex.rxjava2:rxjava:$rxjava2_version"
+    compile "io.reactivex.rxjava2:rxandroid:$rxjava2_version"
+
+
+    compile "com.squareup.retrofit2:adapter-rxjava:$retrofitVersion"
+
+    compile "com.squareup.retrofit2:retrofit:$retrofitVersion"
+
+    //JSON Parsing
+    compile "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+
+    //http logging
+    compile "com.squareup.okhttp3:logging-interceptor:$okHttp3"
+
+
+
 }
